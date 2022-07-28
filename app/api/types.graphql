@@ -1,0 +1,60 @@
+directive @goField(
+  forceResolver: Boolean
+  name: String
+) on FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @goModel(
+  model: String
+  models: [String!]
+) on OBJECT | INPUT_OBJECT | SCALAR | ENUM | INTERFACE | UNION
+
+directive @generateFilter(where: String, purchaseBy: String) on OBJECT | UNION
+directive @oneOf on INPUT_OBJECT # should this be INPUT_OBJECT?
+"""
+https://www.graphql-scalars.dev/docs/scalars/uuid
+"""
+scalar UUID
+"""
+https://www.graphql-scalars.dev/docs/scalars/time
+"""
+scalar Time
+
+"""
+Define a Relay Cursor type:
+https://relay.dev/graphql/connections.htm#sec-Cursor
+"""
+scalar Cursor
+"""
+An object with an ID.
+Follows the [Relay Global Object Identification Specification](https://relay.dev/graphql/objectidentification.htm)
+"""
+interface Node
+  @goModel(
+    model: "github.com/roderm/example-plugin-system/app/ent/entdb.Noder"
+  ) {
+  """
+  The id of the object.
+  """
+  id: ID!
+}
+
+"""
+Paging Input as described:
+https://graphql.org/learn/pagination/
+"""
+input Paging {
+  after: Cursor
+  first: Int
+  before: Cursor
+  last: Int
+}
+
+"""
+https://relay.dev/graphql/connections.htm#sec-Connection-Types.Fields.PageInfo
+"""
+type PageInfo {
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: Cursor
+  endCursor: Cursor
+}

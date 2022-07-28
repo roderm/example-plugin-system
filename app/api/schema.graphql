@@ -1,0 +1,51 @@
+type User implements Node {
+	id: ID!
+	firstname: String
+	lastname: String
+
+	todos(filter: TodoWhereInput, paging: Paging): TodoConnection!
+}
+
+type UserEdge {
+  cursor: Cursor!
+  node: User
+}
+
+type UserConnection {
+  edges: [UserEdge]
+  pageInfo: PageInfo
+  totalCount: Int
+}
+
+type Todo implements Node {
+	id: ID!
+	desciption: String!
+	done: Time
+	user: User!
+}
+
+type TodoEdge {
+  cursor: Cursor!
+  node: Todo
+}
+
+type TodoConnection {
+  edges: [TodoEdge]
+  pageInfo: PageInfo
+  totalCount: Int
+}
+
+type Query {
+	users(filter: UserWhereInput, paging: Paging): UserConnection!
+	todos(filter: TodoWhereInput, paging: Paging): TodoConnection!
+}
+
+type Mutation {
+	createUser(input: CreateUserInput!): User!
+	updateUser(id: ID!, input: UpdateUserInput!): User!
+	deleteUser(id: ID!): User!
+
+	createTodo(input: CreateTodoInput!): Todo!
+	updateTodo(id: ID!, input: UpdateTodoInput!): Todo!
+	deleteTodo(id: ID!): Todo!
+}

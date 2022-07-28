@@ -1,0 +1,9 @@
+go 1.18
+
+// replace github.com/99designs/gqlgen => github.com/roderm/gqlgen v0.17.13
+
+use (
+	../gqlgen
+	./app
+	./extensions/github_issue
+)
