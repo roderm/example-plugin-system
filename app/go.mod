@@ -18,7 +18,7 @@ require (
 )
 
 require (
-	ariga.io/atlas v0.5.0 // indirect
+	ariga.io/atlas v0.3.8-0.20220505085539-5ec35b058386 // indirect
 	github.com/BurntSushi/toml v1.1.0 // indirect
 	github.com/agext/levenshtein v1.2.1 // indirect
 	github.com/agnivade/levenshtein v1.1.1 // indirect

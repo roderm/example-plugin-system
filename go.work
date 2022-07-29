@@ -1,6 +1,8 @@
 go 1.18
 
-// replace github.com/99designs/gqlgen => github.com/roderm/gqlgen v0.17.13
+replace github.com/99designs/gqlgen v0.17.13 => ../gqlgen
+
+replace github.com/roderm/example-plugin-system v0.0.0 => ./
 
 use (
 	../gqlgen

@@ -1,5 +1,5 @@
-ariga.io/atlas v0.5.0 h1:9HZclkGI/xsW7IqKZLIMfnUJ0Nkgm1X1nysq4SMkKsg=
-ariga.io/atlas v0.5.0/go.mod h1:ofVetkJqlaWle3mvYmaS2uyFGFcc7dSq436tmxa/Mzk=
+ariga.io/atlas v0.3.8-0.20220505085539-5ec35b058386 h1:is98hS6Y0DOC9WEWSOOesrHrzZrt7xNswjQJov7K2EU=
+ariga.io/atlas v0.3.8-0.20220505085539-5ec35b058386/go.mod h1:D/d0a5QyMFU2R5E8ArmpnWbMjFP9LOr0TsQNbKqhT20=
 entgo.io/contrib v0.2.1-0.20220513120443-ee1f1c4f1d3b h1:L4NhpgRUrPeV9r0aE/q5bt4yc1/JEvanFRa2RK9FTmY=
 entgo.io/contrib v0.2.1-0.20220513120443-ee1f1c4f1d3b/go.mod h1:joHqzIOuyByIYIJqftYq9d3BVJrfQqkTR3KN2/oLDkA=
 entgo.io/ent v0.10.2-0.20220512043615-f2e0bef7a803 h1:hlVxT7O3OxI9uLvDIaIdNMCNaQ6aIspzdXzbnuJ1TXs=
@@ -31,6 +31,7 @@ github.com/dgryski/trifles v0.0.0-20200323201526-dd97f9abfb48 h1:fRzb/w+pyskVMQ+
 github.com/dgryski/trifles v0.0.0-20200323201526-dd97f9abfb48/go.mod h1:if7Fbed8SFyPtHLHbg49SI7NAdJiC5WIA09pe59rfAA=
 github.com/go-openapi/inflect v0.19.0 h1:9jCH9scKIbHeV9m12SmPilScz6krDxKRasNNSNPXu/4=
 github.com/go-openapi/inflect v0.19.0/go.mod h1:lHpZVlpIQqLyKwJ4N+YSc9hchQy/i12fJykb83CRBH4=
+github.com/go-sql-driver/mysql v1.6.0 h1:BCTh4TKNUYmOmMUcQ3IipzF5prigylS7XXjEkfCHuOE=
 github.com/go-sql-driver/mysql v1.6.0/go.mod h1:DCzpHaOWr8IXmIStZouvnhqoel9Qv2LBy8hT2VhHyBg=
 github.com/go-test/deep v1.0.3 h1:ZrJSEWsXzPOxaZnFteGEfooLba+ju3FYIbOrS+rQd68=
 github.com/go-test/deep v1.0.3/go.mod h1:wGDj63lr65AM2AQyKZd/NYHGb0R+1RLqB8NKt3aSFNA=
@@ -65,6 +66,7 @@ github.com/kr/text v0.2.0 h1:5Nx0Ya0ZqY2ygV366QzturHI13Jq95ApcVaJBhpS+AY=
 github.com/kylelemons/godebug v0.0.0-20170820004349-d65d576e9348 h1:MtvEpTB6LX3vkb4ax0b5D2DHbNAUsen0Gx5wZoq3lV4=
 github.com/kylelemons/godebug v0.0.0-20170820004349-d65d576e9348/go.mod h1:B69LEHPfb2qLo0BaaOLcbitczOKLWTsrBG9LczfCD4k=
 github.com/lib/pq v1.2.0/go.mod h1:5WUZQaWbwv1U+lTReE5YruASi9Al49XbQIvNi/34Woo=
+github.com/lib/pq v1.10.5 h1:J+gdV2cUmX7ZqL2B0lFcW0m+egaHC2V3lpO8nWxyYiQ=
 github.com/logrusorgru/aurora/v3 v3.0.0/go.mod h1:vsR12bk5grlLvLXAYrBsb5Oc/N+LxAlxggSjiwMnCUc=
 github.com/matryer/moq v0.2.7/go.mod h1:kITsx543GOENm48TUAQyJ9+SAvFSr7iGQXPoth/VUBk=
 github.com/mattn/go-colorable v0.1.12/go.mod h1:u5H1YNBxpqRaxsYJYSkiCWKzEfiAb1Gb520KVy5xxl4=

@@ -1,0 +1,8 @@
+type Issue {
+	url: String!
+	status: String
+	isPr: Boolean
+}
+extend type Todo {
+	issue: Issue
+}
